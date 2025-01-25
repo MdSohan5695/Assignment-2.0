@@ -12,25 +12,12 @@
 }
 main{
   background-image: url(assets/bg.png);
+  
 }
 /* nav styles */
-nav{
-    width: 1160px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 122px;
-   
-}
-/* .nav1{
-    display: flex;
-    gap: 11px;
-} */
-
-.nav1{
+.nav1 {
   display: flex;
+  
 }
 
  #school{
@@ -41,29 +28,35 @@ nav{
     font-weight: 700;
    
 } 
-
-
-.nav2{
-    display: flex;
-    gap: 32px;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    font-weight: 500;
-}
 #home{
-    font-weight: 700;
-    color: rgb(254, 163, 1);
+  font-weight: 700;
+  color: rgb(254, 163, 1);
 }
 #about{
-    color: rgb(1, 172, 253);
+  color: rgb(1, 172, 253);
 }
 #facilitics{
-    color: rgb(5, 212, 223);                  
+  color: rgb(5, 212, 223);                  
 }
 #admission{
-    color: rgb(93, 88, 239);
+  color: rgb(93, 88, 239);
 }
+
+
+
+.nav{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 122px;
+  
+ 
+}
+
+
 .nav1 h3{
     font-size: 32px;
 }
@@ -90,7 +83,18 @@ nav{
     color: rgb(255, 255, 255);
     background: rgb(254, 163, 1);
  } 
+.nav2-1{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
 
+
+
+ /* banner style */
   
  .banner-container{
     width: 1160px;
@@ -121,11 +125,6 @@ nav{
     margin-bottom: 24px;
 }
 
-.banner-2{
-    width: 468.61px;
-    height: 575px;
-}
-
  #empowering{
     color: orange;
  }
@@ -139,6 +138,7 @@ nav{
     background-color: black;
  }
 
+ /* banner responsive */
 
 
   /* Standard Curriculum   */
@@ -159,6 +159,7 @@ nav{
 
   .card-container{
     width: 1160px;
+    /* width: 100%; */
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -216,9 +217,17 @@ nav{
   .end-3{
     color: rgb(135, 0, 255);
   }
+  /* Standard Curriculum responsive */
+  
+ 
+    
+  
+
+
+
 
   /* Our Stories */
-  #for-bg{
+  .for-bg{
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
   }
   #stories-heading{
@@ -252,7 +261,7 @@ nav{
     width: 540px;
     height: 337px;
   }
-  #stories-btn{
+  #stories-btn-blue{
     background-color: rgb(60, 216, 232);
   }
   .stories-title{
@@ -279,6 +288,7 @@ nav{
     grid-template-columns: repeat(2,290px);
     grid-template-rows: 320px 320px;
     gap:  19px;
+   
   }
 
   .stories{
@@ -320,6 +330,7 @@ nav{
     margin-top: 24px;
     width: 181.24px;
     height: 47.93px;
+    /* height: 100%; */
     font-size: 15.34px;
     font-weight: 700;
   }
@@ -342,7 +353,10 @@ nav{
   padding-bottom: 40px;
 
 }
-  /* footer section */
+
+  
+  
+
 
   .footer-bg{
     background-color: rgb(1, 172, 253);
@@ -380,7 +394,7 @@ nav{
     height: 81.65px;
   }
   #kids-education{
-    font-size: 42.14px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 39.51px;
   }
@@ -428,4 +442,151 @@ nav{
     gap: 10px;
     justify-content: center;
     align-items: center;
+  }
+
+
+  
+
+
+
+
+
+  .display-none{
+    display: none;
+  }
+
+
+  @media screen  and (max-width:576px) {
+
+    #school,.nav2,.nav3{
+      display: none;
+  }
+
+  nav{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid orange;
+} 
+.nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navber-extra{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.divide{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+    .banner{
+      margin-bottom: 30px;
+    }
+    .banner-container{
+      width: 100%;
+      flex-direction: column-reverse;  
+    }
+    .banner-2 img{
+      width: 100%;
+    
+    }
+   .banner-1 {
+      width: 100%;
+      text-align: center;
+     
+    }
+    .banner-1 h1{
+      font-size: 32px;
+    }
+    #heading{
+      text-align: center;
+      width: 100%;
+      font-size: 23px;
+      margin-: 40px;
+    }
+    .card-container{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      margin-top: 550px;
+     
+      margin: 0 auto;
+      gap: 5px;
+    
+    }
+    .standard-curriculum{
+      width: 100%;
+      background-image: url("/assets/bg.png");
+      margin-bottom: 60px;
+      
+    }
+     .card{
+      width: 100%; 
+      gap: 40px;
+      margin-top: 60px;
+     
+    }
+   
+    .card-description{
+      width: 100%;
+    } 
+    .stories-right{
+      width: 100%;
+      margin: 0 auto;
+    }
+    .our-stories{
+      flex-direction: column;
+    }
+    .stories{
+      width: 100%;
+    }
+    .img-1,.img-2,.img-3{
+      width: 100%;
+    }
+    .stories-left{
+      display: none;
+    }
+
+    .footer{
+      flex-direction: column;
+    }
+    .footer-1{
+      width: 100%;
+      text-align: center;
+    }
+    #kids-education{
+      font-size: 21px;
+    }
+    #footer-description{
+      font-size: 16px;
+      text-align: center;
+    }
+    .footer-2{
+      width: 100%;
+      margin-left: 0;
+  
+    }
+    #keep-in-touch{
+      width: 100%;
+      margin-bottom: 20px;
+      margin-left: 100px;
+    }
+    .icon-img{
+      width: 100%;
+      margin-left: 30px;
+    }
+   
+}
+  @media screen and (min-width:576px) {
+     .hamber,.stories-2{
+      display: none;
+     }
   }
